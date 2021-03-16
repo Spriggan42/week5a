@@ -4,7 +4,7 @@ app.get('/', (req, res) =>
 {
   res.render('index.ejs', {name:"Herry", lastname:"Potter"})
 })
-const port = process.env.port || 8080
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+const PORT = process.env.PORT || 8080
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`)
 })
